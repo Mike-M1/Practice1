@@ -9,7 +9,7 @@ export default function Home() {
           Get started by editing&nbsp;
           <code className="font-mono font-bold">app/page.js</code>
         </p>
-        <Link href="/anotherpage">Go To Another Page</Link>
+        <Link href="/anotherpage" className="bg-orange-200 text-black p-[10px]" legacyBehavior><a>Go To Another Page</a></Link>
        
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
           <a

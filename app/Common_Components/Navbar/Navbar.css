@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+#navbar {
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    z-index: 100;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.btn{
+    border: solid black 2px;
+    border-radius: 19px;
+    padding: 10px;
+    transition: all .7s ease-out;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+
+}
+
+.absolute {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    transition: top 0.3s ease-in-out;
+}
+
+#navbar .absolute.show {
+    top: 0;
+}

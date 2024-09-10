@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/*
+#hero{
+    
+} */
+
+#card{
+    position: relative;
+    overflow: hidden;
+}
+
+#imgbox{
+    height: 70%;
+    overflow: hidden;
+    position: relative;
+    transition: height 0.3s ease;
+    z-index: 1;
+}
+
+#imgbox Image {
+    object-fit: cover;
+    transition: transform 0.3s ease;
+
+}
+
+#cardtext{
+    padding: 15px;
+    transition: transform 0.3s ease;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 0;
+    transform: translateX(0);
+}
+
+/* #cardtext{
+    position: fixed;
+    bottom: 0;
+} */
+
+#card:hover #imgbox {
+    height: 100%;
+}
+
+#card:hover #imgbox Image{
+    transform: scale(1.2);
+}
+
+#card:hover #cardtext {
+    transform: translateY(100%);
+}
+
+#circle-card{
+    position: relative;
+    width: 300px;
+    height:300px;
+    border-radius: 50%;
+    overflow:hidden;
+    transition: all 0.3s ease;
+    
+}
+
+#circle-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+#circle-img Image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+#circle-text{
+
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    height: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px; */
+    /* clip-path: polygon(90% 90%, 100% 100%); */
+    /* transform-origin: center bottom;
+    transition: clip-path 1s ease, opacity 1s ease; */
+    z-index: 0;
+
+}
+
+/* 
+#circle-card:hover #circle-img Image{
+    transform: scale(1.1);
+} */
+
+/* #circle-card:hover #circle-text{
+    animation: fade-pie 1.5s forwards;
+} */
+
+/* @keyframes fade-pie{
+
+    0% { 
+        
+        clip-path: polygon(0% 100%, 100% 100%, 100% 50%, 0% 50%);
+        opacity: 1;
+    }
+    25% { 
+        
+        clip-path: polygon(12.5% 100%, 100% 100%, 100% 50%, 12.5% 50%);
+        opacity: 0.8;
+    }
+    50% { 
+        
+        clip-path: polygon(25% 100%, 100% 100%, 100% 50%, 25% 50%);
+        opacity: 0.6;
+    }
+    75% { 
+        
+        clip-path: polygon(37.5% 100%, 100% 100%, 100% 50%, 37.5% 50%);
+        opacity: 0.4;
+    }
+
+    100% { 
+        
+        clip-path: polygon(50% 100%, 100% 100%, 100% 50%, 50% 50%);
+        opacity: 0;
+    }
+} */
+
+
+
+#benefits{
+    transition: all 1.5s ease;
+    position: relative;
+    z-index: 0;
+}
+
+#benefits:hover{
+    width: 200px;
+    z-index: 10;
+    position: relative;
+
+}
+
+
+#bottomimg{
+    transition: all 1s ease;
+}
+
+#benefits:hover #bottomimg{
+    height: 200px;
+}
+
+#slots{
+    overflow-x: hidden;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Media Queries */
+
+/* Phone (portrait phones, less than 768px) */
+@media only screen and (max-width: 767px) {
+  /* Add phone-specific styles here */
+  
+}
+
+/* Tablet (portrait tablets and large phones, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Add tablet-specific styles here */
+}
+
+/* Laptop/Desktop (laptops/desktops, 1024px and up) */
+@media only screen and (min-width: 1024px) {
+  /* Add laptop/desktop-specific styles here */
+}
+
